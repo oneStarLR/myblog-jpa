@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: Z&Y359L)u157.oM
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+
+logging:
+  level:
+    root: warn
+    com.lrm: info
+  file: log/blog-pro.log
+
+
+
+
+
+

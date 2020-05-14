@@ -1,0 +1,221 @@
+2020-04-17 15:39:13.923  INFO 8556 --- [restartedMain] com.star.BlogApplication                 : Starting BlogApplication on DESKTOP-5QO2IGL with PID 8556 (E:\MyBlog\MyBlog-3.0\blog\target\classes started by OneStar in E:\MyBlog\MyBlog-3.0\blog)
+2020-04-17 15:39:13.953 DEBUG 8556 --- [restartedMain] com.star.BlogApplication                 : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-04-17 15:39:13.953  INFO 8556 --- [restartedMain] com.star.BlogApplication                 : The following profiles are active: dev
+2020-04-17 15:39:14.460  INFO 8556 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3187703c: startup date [Fri Apr 17 15:39:14 CST 2020]; root of context hierarchy
+2020-04-17 15:39:18.767  INFO 8556 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-04-17 15:39:18.780  INFO 8556 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-17 15:39:18.782  INFO 8556 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-04-17 15:39:18.957  INFO 8556 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-17 15:39:18.957  INFO 8556 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4497 ms
+2020-04-17 15:39:19.169  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-04-17 15:39:19.173  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-17 15:39:19.174  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-17 15:39:19.174  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-17 15:39:19.174  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-17 15:39:19.768  INFO 8556 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-17 15:39:19.786  INFO 8556 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-17 15:39:20.017  INFO 8556 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-04-17 15:39:20.019  INFO 8556 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-17 15:39:20.020  INFO 8556 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-04-17 15:39:20.075  INFO 8556 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-17 15:39:20.573  INFO 8556 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-17 15:39:21.152  INFO 8556 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-04-17 15:39:21.811  WARN 8556 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2020-04-17 15:39:21.818  INFO 8556 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-17 15:39:21.834  INFO 8556 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-04-17 15:39:21.842 ERROR 8556 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.star.BlogApplication.main(BlogApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Unable to execute schema management to JDBC target [alter table t_comment add constraint FK4jj284r3pb7japogvo6h72q95 foreign key (parent_comment_id) references t_comment (id)]
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.accept(TargetDatabaseImpl.java:59)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:431)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:420)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applyForeignKeys(SchemaMigratorImpl.java:386)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigrationToTargets(SchemaMigratorImpl.java:214)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:60)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:472)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 27 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`myblog`.`#sql-1328_108`, CONSTRAINT `FK4jj284r3pb7japogvo6h72q95` FOREIGN KEY (`parent_comment_id`) REFERENCES `t_comment` (`id`))
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:935)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2483)
+	at com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1552)
+	at com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2607)
+	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1480)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy94.executeUpdate(Unknown Source)
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.accept(TargetDatabaseImpl.java:56)
+	... 37 common frames omitted
+
+2020-04-17 15:41:57.123  INFO 8072 --- [restartedMain] com.star.BlogApplication                 : Starting BlogApplication on DESKTOP-5QO2IGL with PID 8072 (E:\MyBlog\MyBlog-3.0\blog\target\classes started by OneStar in E:\MyBlog\MyBlog-3.0\blog)
+2020-04-17 15:41:57.124 DEBUG 8072 --- [restartedMain] com.star.BlogApplication                 : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-04-17 15:41:57.124  INFO 8072 --- [restartedMain] com.star.BlogApplication                 : The following profiles are active: dev
+2020-04-17 15:41:57.418  INFO 8072 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1382a34c: startup date [Fri Apr 17 15:41:57 CST 2020]; root of context hierarchy
+2020-04-17 15:42:00.989  INFO 8072 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-04-17 15:42:01.000  INFO 8072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-17 15:42:01.001  INFO 8072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-04-17 15:42:01.174  INFO 8072 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-17 15:42:01.175  INFO 8072 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3757 ms
+2020-04-17 15:42:01.382  INFO 8072 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-04-17 15:42:01.386  INFO 8072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-17 15:42:01.387  INFO 8072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-17 15:42:01.387  INFO 8072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-17 15:42:01.387  INFO 8072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-17 15:42:01.941  INFO 8072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-17 15:42:01.953  INFO 8072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-17 15:42:02.142  INFO 8072 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-04-17 15:42:02.143  INFO 8072 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-17 15:42:02.144  INFO 8072 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-04-17 15:42:02.189  INFO 8072 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-17 15:42:02.344  INFO 8072 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-17 15:42:02.803  INFO 8072 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-04-17 15:42:03.097  INFO 8072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 15:42:03.432  INFO 8072 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-04-17 15:42:04.555  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1382a34c: startup date [Fri Apr 17 15:41:57 CST 2020]; root of context hierarchy
+2020-04-17 15:42:04.637  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.star.web.AboutShowController.about()
+2020-04-17 15:42:04.642  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.star.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.642  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.star.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.star.vo.BlogQuery,org.springframework.ui.Model)
+2020-04-17 15:42:04.642  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.star.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.star.vo.BlogQuery,org.springframework.ui.Model)
+2020-04-17 15:42:04.642  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-04-17 15:42:04.643  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.BlogController.input(org.springframework.ui.Model)
+2020-04-17 15:42:04.643  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.star.web.admin.BlogController.post(com.star.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2020-04-17 15:42:04.645  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks/{id}/delete],methods=[GET]}" onto public java.lang.String com.star.web.admin.FriendController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.645  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks],methods=[GET]}" onto public java.lang.String com.star.web.admin.FriendController.friend(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-04-17 15:42:04.645  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks/{id}],methods=[POST]}" onto public java.lang.String com.star.web.admin.FriendController.editPost(com.star.po.FriendLink,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.645  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks/{id}/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.FriendController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-04-17 15:42:04.645  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.FriendController.input(org.springframework.ui.Model)
+2020-04-17 15:42:04.647  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks],methods=[POST]}" onto public java.lang.String com.star.web.admin.FriendController.post(com.star.po.FriendLink,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.649  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.star.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.649  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.star.web.admin.LoginController.loginPage()
+2020-04-17 15:42:04.649  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.star.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-04-17 15:42:04.651  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures/{id}/delete],methods=[GET]}" onto public java.lang.String com.star.web.admin.PictureController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.651  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures/{id}],methods=[POST]}" onto public java.lang.String com.star.web.admin.PictureController.editPost(com.star.po.Picture,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.651  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures/{id}/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.PictureController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-04-17 15:42:04.651  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures],methods=[GET]}" onto public java.lang.String com.star.web.admin.PictureController.pictures(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-04-17 15:42:04.652  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.PictureController.input(org.springframework.ui.Model)
+2020-04-17 15:42:04.652  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures],methods=[POST]}" onto public java.lang.String com.star.web.admin.PictureController.post(com.star.po.Picture,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.656  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.star.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.656  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.star.web.admin.TagController.editPost(com.star.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.656  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-04-17 15:42:04.656  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.TagController.input(org.springframework.ui.Model)
+2020-04-17 15:42:04.657  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.star.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-04-17 15:42:04.657  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.star.web.admin.TagController.post(com.star.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.659  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.star.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.660  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.star.web.admin.TypeController.editPost(com.star.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.726  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-04-17 15:42:04.727  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.star.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-04-17 15:42:04.728  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.TypeController.input(org.springframework.ui.Model)
+2020-04-17 15:42:04.728  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.star.web.admin.TypeController.post(com.star.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-04-17 15:42:04.728  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.star.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2020-04-17 15:42:04.729  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.star.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2020-04-17 15:42:04.730  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.star.web.CommentController.post(com.star.po.Comment,javax.servlet.http.HttpSession)
+2020-04-17 15:42:04.732  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friends],methods=[GET]}" onto public java.lang.String com.star.web.FriendsShowController.friends(org.springframework.ui.Model)
+2020-04-17 15:42:04.733  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.star.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-04-17 15:42:04.734  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.star.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2020-04-17 15:42:04.735  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.star.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2020-04-17 15:42:04.735  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.star.web.IndexController.newblogs(org.springframework.ui.Model)
+2020-04-17 15:42:04.736  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message],methods=[GET]}" onto public java.lang.String com.star.web.MessageController.message()
+2020-04-17 15:42:04.736  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/messagecomment],methods=[GET]}" onto public java.lang.String com.star.web.MessageController.messageComment(org.springframework.ui.Model)
+2020-04-17 15:42:04.736  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message],methods=[POST]}" onto public java.lang.String com.star.web.MessageController.post(com.star.po.Message,javax.servlet.http.HttpSession)
+2020-04-17 15:42:04.737  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/music],methods=[GET]}" onto public java.lang.String com.star.web.MusicShowController.about()
+2020-04-17 15:42:04.737  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/picture],methods=[GET]}" onto public java.lang.String com.star.web.PictureShowController.picture(org.springframework.ui.Model)
+2020-04-17 15:42:04.737  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.star.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-04-17 15:42:04.738  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.star.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-04-17 15:42:04.740  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-17 15:42:04.740  INFO 8072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-17 15:42:04.797  INFO 8072 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 15:42:04.798  INFO 8072 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 15:42:04.822  INFO 8072 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-04-17 15:42:04.855  INFO 8072 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 15:42:05.620  INFO 8072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-17 15:42:05.672  INFO 8072 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-04-17 15:42:05.736  INFO 8072 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-04-17 15:42:05.741  INFO 8072 --- [restartedMain] com.star.BlogApplication                 : Started BlogApplication in 10.411 seconds (JVM running for 12.557)
+2020-04-17 15:42:12.971  INFO 8072 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-17 15:42:12.971  INFO 8072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-17 15:42:13.024  INFO 8072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 53 ms
+2020-04-17 15:42:13.065  INFO 8072 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-04-17 15:42:13.167  WARN 8072 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-04-17 15:42:13.185  WARN 8072 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-04-17 15:42:13.192  INFO 8072 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : index
+2020-04-17 15:42:14.465  INFO 8072 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-04-17 15:42:14.472  INFO 8072 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-04-17 15:42:20.084  INFO 8072 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-17 15:42:20.122  INFO 8072 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Result : types
+2020-04-17 15:42:20.677  INFO 8072 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-04-17 15:42:20.685  INFO 8072 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-04-17 15:42:26.893  INFO 8072 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.ArchiveShowController.archives', args=[{}]}
+2020-04-17 15:42:26.933  INFO 8072 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Result : archives
+2020-04-17 15:42:27.166  INFO 8072 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-04-17 15:42:27.177  INFO 8072 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-04-17 15:43:11.333  INFO 8072 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-04-17 15:43:11.360  INFO 8072 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Result : index
+2020-04-17 15:43:11.653  INFO 8072 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-04-17 15:43:11.666  INFO 8072 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-04-17 15:46:29.923  INFO 8072 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/message', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.message', args=[]}
+2020-04-17 15:46:29.928  INFO 8072 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : message
+2020-04-17 15:46:30.255  INFO 8072 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-04-17 15:46:30.262  INFO 8072 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-04-17 15:46:30.300  INFO 8072 --- [http-nio-8080-exec-3] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/messagecomment', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.messageComment', args=[{}]}
+2020-04-17 15:46:30.331  INFO 8072 --- [http-nio-8080-exec-3] com.star.aspect.LogAspect                : Result : message::messageList
+2020-04-17 15:46:34.352  INFO 8072 --- [http-nio-8080-exec-9] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/blog/58', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.blog', args=[58, {}]}
+2020-04-17 15:46:34.429  INFO 8072 --- [http-nio-8080-exec-9] com.star.aspect.LogAspect                : Result : blog
+2020-04-17 15:46:35.539  INFO 8072 --- [http-nio-8080-exec-9] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-04-17 15:46:35.545  INFO 8072 --- [http-nio-8080-exec-9] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-04-17 15:46:35.746  INFO 8072 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/comments/58', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.CommentController.comments', args=[58, {}]}
+2020-04-17 15:46:35.794  INFO 8072 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : blog :: commentList

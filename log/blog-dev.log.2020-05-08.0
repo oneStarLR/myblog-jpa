@@ -1,0 +1,208 @@
+2020-05-08 10:32:02.859  INFO 11064 --- [restartedMain] com.star.BlogApplication                 : Starting BlogApplication on DESKTOP-5QO2IGL with PID 11064 (E:\MyBlog\MyBlog-3.0\blog\target\classes started by OneStar in E:\MyBlog\MyBlog-3.0\blog)
+2020-05-08 10:32:02.875 DEBUG 11064 --- [restartedMain] com.star.BlogApplication                 : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-05-08 10:32:02.875  INFO 11064 --- [restartedMain] com.star.BlogApplication                 : The following profiles are active: dev
+2020-05-08 10:32:04.093  INFO 11064 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2719d630: startup date [Fri May 08 10:32:04 CST 2020]; root of context hierarchy
+2020-05-08 10:32:06.921  INFO 11064 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-05-08 10:32:06.921  INFO 11064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-08 10:32:06.921  INFO 11064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-05-08 10:32:07.078  INFO 11064 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-08 10:32:07.078  INFO 11064 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2985 ms
+2020-05-08 10:32:07.328  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-08 10:32:07.328  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-08 10:32:07.328  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-08 10:32:07.328  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-08 10:32:07.328  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-08 10:32:08.140  INFO 11064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-08 10:32:08.171  INFO 11064 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-08 10:32:08.437  INFO 11064 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-08 10:32:08.437  INFO 11064 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-08 10:32:08.437  INFO 11064 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-08 10:32:08.515  INFO 11064 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-08 10:32:09.093  INFO 11064 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-08 10:32:09.656  INFO 11064 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-08 10:32:10.109  INFO 11064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-08 10:32:10.437  INFO 11064 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-08 10:32:10.968  WARN 11064 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogController': Unsatisfied dependency expressed through method 'blogs' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.domain.Pageable' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.data.web.PageableDefault(sort=[updateTime], page=0, size=8, value=10, direction=DESC)}
+2020-05-08 10:32:10.968  INFO 11064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-08 10:32:10.968  INFO 11064 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-05-08 10:32:10.999  INFO 11064 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-05-08 10:32:11.124 ERROR 11064 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method blogs in com.star.web.admin.BlogController required a bean of type 'org.springframework.data.domain.Pageable' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.domain.Pageable' in your configuration.
+
+2020-05-08 10:34:58.791  INFO 2152 --- [restartedMain] com.star.BlogApplication                 : Starting BlogApplication on DESKTOP-5QO2IGL with PID 2152 (E:\MyBlog\MyBlog-3.0\blog\target\classes started by OneStar in E:\MyBlog\MyBlog-3.0\blog)
+2020-05-08 10:34:58.791 DEBUG 2152 --- [restartedMain] com.star.BlogApplication                 : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-05-08 10:34:58.791  INFO 2152 --- [restartedMain] com.star.BlogApplication                 : The following profiles are active: dev
+2020-05-08 10:34:59.135  INFO 2152 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52f34ee5: startup date [Fri May 08 10:34:59 CST 2020]; root of context hierarchy
+2020-05-08 10:35:01.213  INFO 2152 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-05-08 10:35:01.213  INFO 2152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-08 10:35:01.213  INFO 2152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-05-08 10:35:01.354  INFO 2152 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-08 10:35:01.354  INFO 2152 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2219 ms
+2020-05-08 10:35:01.557  INFO 2152 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-08 10:35:01.557  INFO 2152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-08 10:35:01.557  INFO 2152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-08 10:35:01.557  INFO 2152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-08 10:35:01.557  INFO 2152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-08 10:35:02.088  INFO 2152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-08 10:35:02.088  INFO 2152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-08 10:35:02.291  INFO 2152 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-08 10:35:02.291  INFO 2152 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-08 10:35:02.307  INFO 2152 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-08 10:35:02.369  INFO 2152 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-08 10:35:02.526  INFO 2152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-08 10:35:02.932  INFO 2152 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-08 10:35:03.198  INFO 2152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-08 10:35:03.479  INFO 2152 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-08 10:35:04.494  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52f34ee5: startup date [Fri May 08 10:34:59 CST 2020]; root of context hierarchy
+2020-05-08 10:35:04.572  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.star.web.AboutShowController.about()
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.star.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.star.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.star.vo.BlogQuery,org.springframework.ui.Model)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.BlogController.input(org.springframework.ui.Model)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.star.web.admin.BlogController.post(com.star.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.star.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.star.vo.BlogQuery,org.springframework.ui.Model)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks/{id}/delete],methods=[GET]}" onto public java.lang.String com.star.web.admin.FriendController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.FriendController.input(org.springframework.ui.Model)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks],methods=[POST]}" onto public java.lang.String com.star.web.admin.FriendController.post(com.star.po.FriendLink,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks/{id}/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.FriendController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-05-08 10:35:04.588  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks/{id}],methods=[POST]}" onto public java.lang.String com.star.web.admin.FriendController.editPost(com.star.po.FriendLink,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/friendlinks],methods=[GET]}" onto public java.lang.String com.star.web.admin.FriendController.friend(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.star.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.star.web.admin.LoginController.loginPage()
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.star.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures/{id}/delete],methods=[GET]}" onto public java.lang.String com.star.web.admin.PictureController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.PictureController.input(org.springframework.ui.Model)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures],methods=[POST]}" onto public java.lang.String com.star.web.admin.PictureController.post(com.star.po.Picture,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures/{id}/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.PictureController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures/{id}],methods=[POST]}" onto public java.lang.String com.star.web.admin.PictureController.editPost(com.star.po.Picture,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/pictures],methods=[GET]}" onto public java.lang.String com.star.web.admin.PictureController.pictures(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.star.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.star.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-05-08 10:35:04.604  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.TypeController.input(org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.star.web.admin.TypeController.post(com.star.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.star.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.star.web.admin.TypeController.editPost(com.star.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.star.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.star.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.star.web.CommentController.post(com.star.po.Comment,javax.servlet.http.HttpSession)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friends],methods=[GET]}" onto public java.lang.String com.star.web.FriendsShowController.friends(org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.star.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.star.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.star.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.star.web.IndexController.newblogs(org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message],methods=[GET]}" onto public java.lang.String com.star.web.MessageController.message()
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message],methods=[POST]}" onto public java.lang.String com.star.web.MessageController.post(com.star.po.Message,javax.servlet.http.HttpSession)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/messagecomment],methods=[GET]}" onto public java.lang.String com.star.web.MessageController.messageComment(org.springframework.ui.Model)
+2020-05-08 10:35:04.619  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/music],methods=[GET]}" onto public java.lang.String com.star.web.MusicShowController.about()
+2020-05-08 10:35:04.635  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/picture],methods=[GET]}" onto public java.lang.String com.star.web.PictureShowController.picture(org.springframework.ui.Model)
+2020-05-08 10:35:04.635  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.star.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-05-08 10:35:04.635  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-08 10:35:04.635  INFO 2152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-08 10:35:04.666  INFO 2152 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-08 10:35:04.682  INFO 2152 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-08 10:35:04.697  INFO 2152 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-05-08 10:35:04.729  INFO 2152 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-08 10:35:05.510  INFO 2152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-08 10:35:05.557  INFO 2152 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-08 10:35:05.619  INFO 2152 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-05-08 10:35:05.619  INFO 2152 --- [restartedMain] com.star.BlogApplication                 : Started BlogApplication in 8.64 seconds (JVM running for 10.619)
+2020-05-08 10:36:36.610  INFO 2152 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-08 10:36:36.611  INFO 2152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-08 10:36:36.672  INFO 2152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+2020-05-08 10:36:36.728  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-08 10:36:36.863  WARN 2152 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-05-08 10:36:36.882  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : index
+2020-05-08 10:36:38.335  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:36:38.343  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:37:35.877  INFO 2152 --- [http-nio-8080-exec-3] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/blog/59', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.blog', args=[59, {}]}
+2020-05-08 10:37:35.988  INFO 2152 --- [http-nio-8080-exec-3] com.star.aspect.LogAspect                : Result : blog
+2020-05-08 10:37:38.402  INFO 2152 --- [http-nio-8080-exec-2] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:37:38.410  INFO 2152 --- [http-nio-8080-exec-2] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:37:39.077  INFO 2152 --- [http-nio-8080-exec-9] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/comments/59', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.CommentController.comments', args=[59, {}]}
+2020-05-08 10:37:39.160  INFO 2152 --- [http-nio-8080-exec-9] com.star.aspect.LogAspect                : Result : blog :: commentList
+2020-05-08 10:37:40.325  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-05-08 10:37:40.373  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : types
+2020-05-08 10:37:40.955  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:37:40.963  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:37:45.987  INFO 2152 --- [http-nio-8080-exec-3] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.ArchiveShowController.archives', args=[{}]}
+2020-05-08 10:37:46.015  INFO 2152 --- [http-nio-8080-exec-3] com.star.aspect.LogAspect                : Result : archives
+2020-05-08 10:37:46.283  INFO 2152 --- [http-nio-8080-exec-2] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:37:46.298  INFO 2152 --- [http-nio-8080-exec-2] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:37:47.626  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/music', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MusicShowController.about', args=[]}
+2020-05-08 10:37:47.632  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : music
+2020-05-08 10:37:49.142  INFO 2152 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/message', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.message', args=[]}
+2020-05-08 10:37:49.178  INFO 2152 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Result : message
+2020-05-08 10:37:49.511  INFO 2152 --- [http-nio-8080-exec-4] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:37:49.516  INFO 2152 --- [http-nio-8080-exec-4] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:37:49.568  INFO 2152 --- [http-nio-8080-exec-3] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/messagecomment', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.messageComment', args=[{}]}
+2020-05-08 10:37:49.598  INFO 2152 --- [http-nio-8080-exec-3] com.star.aspect.LogAspect                : Result : message::messageList
+2020-05-08 10:37:54.298  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/message', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.post', args=[Message{id=null, nickname='oneStar', email='onestarlr@hotmail.com', content='asf', avatar='null', createTime=null, replyMessages=[], parentMessage=Message{id=-1, nickname='null', email='null', content='null', avatar='null', createTime=null, replyMessages=[], parentMessage=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@75b64afc]}
+2020-05-08 10:37:54.325  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : redirect:/messagecomment
+2020-05-08 10:37:54.347  INFO 2152 --- [http-nio-8080-exec-10] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/messagecomment;jsessionid=DB53E13B2B5F75FBE209F8580C5847F6', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.messageComment', args=[{}]}
+2020-05-08 10:37:54.354  INFO 2152 --- [http-nio-8080-exec-10] com.star.aspect.LogAspect                : Result : message::messageList
+2020-05-08 10:37:59.933  INFO 2152 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/message', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.post', args=[Message{id=null, nickname='oneStar', email='onestarlr@hotmail.com', content='sdf', avatar='null', createTime=null, replyMessages=[], parentMessage=Message{id=49, nickname='null', email='null', content='null', avatar='null', createTime=null, replyMessages=[], parentMessage=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@75b64afc]}
+2020-05-08 10:37:59.946  INFO 2152 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Result : redirect:/messagecomment
+2020-05-08 10:37:59.953  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/messagecomment', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.messageComment', args=[{}]}
+2020-05-08 10:37:59.968  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : message::messageList
+2020-05-08 10:38:07.704  INFO 2152 --- [http-nio-8080-exec-9] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/message', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.post', args=[Message{id=null, nickname='oneStar', email='onestarlr@hotmail.com', content='adsfadf', avatar='null', createTime=null, replyMessages=[], parentMessage=Message{id=49, nickname='null', email='null', content='null', avatar='null', createTime=null, replyMessages=[], parentMessage=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@75b64afc]}
+2020-05-08 10:38:07.713  INFO 2152 --- [http-nio-8080-exec-9] com.star.aspect.LogAspect                : Result : redirect:/messagecomment
+2020-05-08 10:38:07.720  INFO 2152 --- [http-nio-8080-exec-4] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/messagecomment', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.MessageController.messageComment', args=[{}]}
+2020-05-08 10:38:07.731  INFO 2152 --- [http-nio-8080-exec-4] com.star.aspect.LogAspect                : Result : message::messageList
+2020-05-08 10:38:12.493  INFO 2152 --- [http-nio-8080-exec-6] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/friends', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.FriendsShowController.friends', args=[{}]}
+2020-05-08 10:38:12.513  INFO 2152 --- [http-nio-8080-exec-6] com.star.aspect.LogAspect                : Result : friends
+2020-05-08 10:38:12.960  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:38:12.964  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:38:24.614  INFO 2152 --- [http-nio-8080-exec-2] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/picture', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.PictureShowController.picture', args=[{}]}
+2020-05-08 10:38:24.633  INFO 2152 --- [http-nio-8080-exec-2] com.star.aspect.LogAspect                : Result : picture
+2020-05-08 10:38:25.081  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:38:25.087  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:38:29.596  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.AboutShowController.about', args=[]}
+2020-05-08 10:38:29.602  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : about
+2020-05-08 10:38:30.015  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:38:30.023  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:15.865  INFO 2152 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:15.871  INFO 2152 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:20.743  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:20.748  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:22.749  INFO 2152 --- [http-nio-8080-exec-4] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:22.754  INFO 2152 --- [http-nio-8080-exec-4] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:23.513  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:23.519  INFO 2152 --- [http-nio-8080-exec-5] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:24.366  INFO 2152 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:24.374  INFO 2152 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:25.645  INFO 2152 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:25.649  INFO 2152 --- [http-nio-8080-exec-7] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:27.256  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:27.260  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:28.746  INFO 2152 --- [http-nio-8080-exec-10] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:28.752  INFO 2152 --- [http-nio-8080-exec-10] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:29.944  INFO 2152 --- [http-nio-8080-exec-6] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:29.950  INFO 2152 --- [http-nio-8080-exec-6] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:31.250  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:31.254  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:32.734  INFO 2152 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:32.744  INFO 2152 --- [http-nio-8080-exec-8] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 10:40:34.162  INFO 2152 --- [http-nio-8080-exec-6] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 10:40:34.166  INFO 2152 --- [http-nio-8080-exec-6] com.star.aspect.LogAspect                : Result : index :: newblogList
+2020-05-08 13:30:02.738  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-08 13:30:02.897  INFO 2152 --- [http-nio-8080-exec-1] com.star.aspect.LogAspect                : Result : index
+2020-05-08 13:30:04.258  INFO 2152 --- [http-nio-8080-exec-2] com.star.aspect.LogAspect                : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.star.web.IndexController.newblogs', args=[{}]}
+2020-05-08 13:30:04.262  INFO 2152 --- [http-nio-8080-exec-2] com.star.aspect.LogAspect                : Result : index :: newblogList
